@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const renderReview = ({
   headline,
@@ -29,4 +29,4 @@ MovieReviews.defaultProps = {
   reviews: []
 };
 
-module.exports = MovieReviews;
+export default MovieReviews;

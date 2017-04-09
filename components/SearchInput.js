@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const SearchInput = ({
   label,
@@ -9,7 +9,7 @@ const SearchInput = ({
   <form onSubmit={handleSubmit}>
     <label htmlFor='search-input'>{label}</label>
     <input id='search-input' type="text" style={{width: size}} onChange={handleChange} />
-    <button type="submit">Submit</button> 
+    <button type="submit">Submit</button>
   </form>
 );
 SearchInput.defaultProps = {
@@ -21,4 +21,4 @@ SearchInput.propTypes = {
   handleSubmit: React.PropTypes.fun
 };
 
-module.exports = SearchInput;
+export default SearchInput;

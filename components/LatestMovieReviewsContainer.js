@@ -1,8 +1,8 @@
-const React = require('react');
-const { Component } = require('react');
-const { fetch } = require('whatwg-fetch');
+import React from 'react';
+import { Component } from 'react';
+import { fetch } from 'whatwg-fetch';
 
-const MovieReviews = require('./MovieReviews');
+import MovieReviews from './MovieReviews';
 
 const NYT_API_KEY = 'f98593a095b44546bf4073744b540da0';
 const URL = 'https://api.nytimes.com/svc/movies/v2/reviews/all.json?'
@@ -33,4 +33,4 @@ class LatestMovieReviewsContainer extends Component {
   }
 }
 
-module.exports = LatestMovieReviewsContainer;
+export default LatestMovieReviewsContainer;
